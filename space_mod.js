@@ -1,3 +1,7 @@
+(function() {
+
+if (!window.elements) return;
+    
 elements.mars_sand = {
     color: "#b85c3a",
     behavior: behaviors.POWDER,
