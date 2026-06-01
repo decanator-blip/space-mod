@@ -1,14 +1,13 @@
-runAfterLoad(() => {
+if (!window.elements || !window.behaviors) {
+    console.log("Sandboxels mod environment not ready");
+} else {
 
 elements.mars_sand = {
     color: "#b85c3a",
     behavior: behaviors.POWDER,
     category: "land",
     state: "solid",
-    density: 1700,
-    reactions: {
-        fire: { elem1: "unknown_glass" }
-    }
+    density: 1700
 };
 
 elements.unknown_glass = {
@@ -52,4 +51,4 @@ elements.vacuum = {
     density: 0
 };
 
-});
+}
