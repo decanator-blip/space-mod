@@ -1,7 +1,5 @@
-(function() {
+runAfterLoad(() => {
 
-if (!window.elements) return;
-    
 elements.mars_sand = {
     color: "#b85c3a",
     behavior: behaviors.POWDER,
@@ -18,10 +16,7 @@ elements.unknown_glass = {
     behavior: behaviors.WALL,
     category: "land",
     state: "solid",
-    density: 2500,
-    reactions: {
-        fire: { elem1: "unknown_shards" }
-    }
+    density: 2500
 };
 
 elements.unknown_shards = {
@@ -38,11 +33,7 @@ elements.star_core = {
     category: "energy",
     state: "solid",
     density: 5000,
-    temp: 1000,
-    reactions: {
-        fire: { elem1: "black_hole" },
-        lava: { elem1: "black_hole" }
-    }
+    temp: 1000
 };
 
 elements.black_hole = {
@@ -60,3 +51,5 @@ elements.vacuum = {
     state: "gas",
     density: 0
 };
+
+});
