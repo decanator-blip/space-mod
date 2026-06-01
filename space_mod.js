@@ -1,6 +1,4 @@
-if (!window.elements || !window.behaviors) {
-    console.log("Sandboxels mod environment not ready");
-} else {
+runAfterLoad(() => {
 
 elements.mars_sand = {
     color: "#b85c3a",
@@ -51,4 +49,4 @@ elements.vacuum = {
     density: 0
 };
 
-}
+});
